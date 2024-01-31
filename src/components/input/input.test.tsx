@@ -27,4 +27,19 @@ describe('Input component', () => {
 
     expect(inputElement).toMatchSnapshot();
   });
+
+  it('renders with additional className', () => {
+    const placeholder = 'Enter text';
+    const additionalClass = 'custom-class';
+    const { getByPlaceholderText } = render(
+      <Input
+        type="text"
+        placeholder={placeholder}
+        className={additionalClass}
+      />
+    );
+
+    const inputElement = getByPlaceholderText(placeholder);
+    expect(inputElement).toHaveClass(additionalClass);
+  });
 });
