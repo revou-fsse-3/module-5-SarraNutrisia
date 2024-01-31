@@ -1,15 +1,15 @@
 # Documentation 📚
 
 
-🔎 **_This is assignment for Week 12 on Revou FSSE Section Seoul._** 🔎
+🔎 **_This is assignment for Week 13 on Revou FSSE Section Seoul._** 🔎
 
 
 
-*Theme Name :* Converting Simple Weather React Application Into React Next Js With Typescript
+*Theme Name :* Unit Testing Component Simple Weather React Application With Jest in React Next Js
 
 *Author :* Sarra Nutrisia
 
-*Created :* 24/01/2024 
+*Created :* 31/01/2024 
 
 *HTML Version :* HTML 5
 
@@ -45,6 +45,7 @@ You can start editing the page by modifying `pages/index.tsx`. The page auto-upd
 The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
 
 This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+
 
 ## Learn More
 

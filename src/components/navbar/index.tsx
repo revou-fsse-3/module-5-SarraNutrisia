@@ -26,7 +26,7 @@ function Navbar() {
   const router = useRouter()
 
   const handleOpenNavMenu = (event: React.MouseEvent<HTMLElement>) => {
-    setAnchorElNav(event.currentTarget);
+    setAnchorElNav(event.currentTarget as HTMLElement);
   };
 
   const handleCloseNavMenu = () => {
@@ -36,15 +36,15 @@ function Navbar() {
   return (
     <AppBar position="static" sx={{ backgroundColor: '#001f3f'}}>
       <Container maxWidth="xl">
-        <Toolbar disableGutters>
-          <CloudQueueIcon fontSize="large" sx={{ display: { xs: "none", md: "flex" }, mr: 2.5 }} />
+        <Toolbar >
+          <CloudQueueIcon fontSize="large" sx={{ display: { xs: "none", md: "flex" }, mr: 1.5 }} />
           <Typography
             variant="h6"
             noWrap
             component="a"
             href="#app-bar-with-responsive-menu"    
             sx={{
-              mr: 113,
+              mr: 100,
               display: { xs: "none", md: "flex" },
               fontFamily: "sans-serif",
               fontWeight: 750,
@@ -88,21 +88,21 @@ function Navbar() {
               {pages.map((page) => (
                 <MenuItem key={page.name} onClick={() => {
                   handleCloseNavMenu();
-                  router.push(page.name)
+                  router.push(page.path)
                 }}>
                   <Typography textAlign="center">{page.name}</Typography>
                 </MenuItem>
               ))}
             </Menu>
           </Box>
-          <CloudQueueIcon sx={{ display: { xs: "flex", md: "none" }, mr: 2.5 }} />
+          <CloudQueueIcon sx={{ display: { xs: "flex", md: "none" }, mr: 1.5 }} />
           <Typography
-            variant="h5"
+            variant="h6"
             noWrap
             component="a"
             href="#app-bar-with-responsive-menu"
             sx={{
-              mr: 113,
+              mr: 100,
               display: { xs: "flex", md: "none" },
               flexGrow: 1,
               fontFamily: "sans-serif",
@@ -120,7 +120,7 @@ function Navbar() {
                 key={page.name}
                 onClick={() => {
                   handleCloseNavMenu();
-                  router.push(page.name)
+                  router.push(page.path)
                 }}
                 sx={{ my: 2, color: "white", display: "block" }}
               >

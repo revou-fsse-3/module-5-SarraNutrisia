@@ -36,8 +36,9 @@ interface HomeContainerProps {
 }
 
 const HomeContainer: React.FC<HomeContainerProps> = ({ initialData }) => {
-  const router = useRouter();
 
+  const router = useRouter();
+ 
   const apiKey = "c1bbe714ac530d052910f744c4c3da7b";
   const [wicon, setWicon] = useState<StaticImageData>(weather_icon);
   const [humidity, setHumidity] = useState<string>("-");

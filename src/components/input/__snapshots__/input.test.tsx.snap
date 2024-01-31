@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Input component calls onChange callback when input value changes 1`] = `
+<input
+  placeholder="Enter text"
+  type="text"
+  value=""
+/>
+`;
+
+exports[`Input component renders with provided props 1`] = `
+<input
+  placeholder="Enter text"
+  type="text"
+  value=""
+/>
+`;
