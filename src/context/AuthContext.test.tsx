@@ -3,8 +3,9 @@ import { AuthProvider } from '../context/AuthContext';
 import { useAuth } from '../context/AuthContext';
 
 describe('AuthContext component unit testing', () => {
-    // this test for AuthContext component with explanation should render AuthContext with children
+    
     it('should render AuthContext with children', () => {
+        
         const ChildComponent = () => {
             const { isAuthenticated, login, logout } = useAuth();
             return (
